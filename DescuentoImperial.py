@@ -71,6 +71,8 @@ while continuar=="s":
     while True:
         try:
             cantidad= int(input(f"CUANTOS DESEAS COMPRAR? {Producto}: "))
+            while cantidad<1:
+                cantidad =int(input("POR FAVOR, INGRESE UN NUMERO VALIDO PARA LA CANTIDAD "))
             break
         except ValueError:
             print("Por favor, ingrese un número válido.")  
